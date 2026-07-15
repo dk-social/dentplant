@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DentPlant — Premium Dental Care in Somerville, MA</title>
+  <meta name="description" content="DentPlant offers dental implants, orthodontics, whitening, aesthetics, root canals, and prosthetics in Somerville, MA. Book your free consultation today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo" aria-label="DentPlant home">
+        <img src="assets/1.jpg" alt="DentPlant" class="logo__img" width="48" height="48" />
+        <span class="logo__text">DentPlant</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#smile-gallery">Smile Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn--primary btn--sm header__cta">Book Free Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__stars" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Somerville, MA · Full-Service Dental Clinic</p>
+          <h1 class="hero__title">Your Dream Smile Starts Here</h1>
+          <p class="hero__subtitle">Expert implants, whitening, orthodontics &amp; full smile makeovers — all under one roof in Somerville, MA.</p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary btn--lg">Book Free Consultation</a>
+            <a href="#smile-gallery" class="btn btn--ghost btn--lg">See Smile Gallery</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__logo-glow" aria-hidden="true"></div>
+          <img
+            src="assets/1.jpg"
+            alt="DentPlant logo — glowing dental implant on a starry night sky"
+            class="hero__logo"
+            width="380"
+            height="380"
+            fetchpriority="high"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Strip -->
+    <section class="trust-strip" aria-label="Why patients trust DentPlant">
+      <div class="container trust-strip__inner">
+        <div class="trust-item">
+          <span class="trust-item__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9H22L16 13.5L18.5 21L12 16.5L5.5 21L8 13.5L2 9H9.5L12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </span>
+          <span>Dental Implant Specialists</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-item__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </span>
+          <span>Teeth in One Day</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-item__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M20 7L9 18L4 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span>Free Consultation</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-item__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16M4 12h10M4 19h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M18 10l3 2-3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span>English &amp; Portuguese Spoken</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Our Services</p>
+          <h2>Everything Your Smile Needs, In One Place</h2>
+          <p class="section__lead">From single implants to full smile transformations — every treatment under one roof, with specialists who know your name.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M14 32c-2-6-2-12 0-18 1-4 4-6 6-6s5 2 6 6c2 6 2 12 0 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 8v4M16 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Dental Implants</h3>
+            <p>Permanent, natural-looking replacements that restore confidence and function — built to last a lifetime.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M8 20c0-6 4-10 12-10s12 4 12 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M10 24h20M12 28h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Orthodontics &amp; Braces</h3>
+            <p>Straighten your smile with modern braces and clear aligners — discreet options for every age.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="2"/><path d="M14 22c2 4 10 4 12 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Teeth Whitening</h3>
+            <p>Professional whitening that lifts years of stains in a single visit — brighter, camera-ready results.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M12 28c0-8 4-14 8-14s8 6 8 14" stroke="currentColor" stroke-width="2"/><path d="M8 32h24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Smile Aesthetics</h3>
+            <p>Veneers, bonding, and cosmetic artistry designed to craft the smile you've always envisioned.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M20 8v24M14 14l6-4 6 4M14 26l6 4 6-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Root Canal Treatment</h3>
+            <p>Gentle, precise endodontic care that saves your natural tooth and eliminates pain at the source.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><rect x="10" y="12" width="20" height="16" rx="3" stroke="currentColor" stroke-width="2"/><path d="M16 12V10a4 4 0 018 0v2" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Prosthetics &amp; Crowns</h3>
+            <p>Custom crowns, bridges, and dentures that look and feel like your own teeth — precision-crafted in-house.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teeth in a Day -->
+    <section class="section feature-day" id="teeth-in-a-day">
+      <div class="feature-day__stars" aria-hidden="true"></div>
+      <div class="container feature-day__grid">
+        <div class="feature-day__content">
+          <p class="eyebrow eyebrow--light">Our Signature Service</p>
+          <h2>New Smile.<br />One Day.</h2>
+          <div class="feature-day__accent-line" aria-hidden="true"></div>
+          <p class="feature-day__lead">Walk in with missing teeth. Walk out with a full, confident smile — all in a single visit.</p>
+          <p>Our Teeth-in-a-Day protocol combines advanced implant technology with in-house specialists to deliver a complete arch restoration without months of waiting. No temporary dentures. No endless appointments. Just a transformative result, done right the first time.</p>
+          <ul class="feature-day__list">
+            <li>Full arch implant restoration in one appointment</li>
+            <li>In-house surgical &amp; prosthetic team</li>
+            <li>Digital planning for precision fit</li>
+            <li>Free consultation to see if you're a candidate</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--lg">Book Your Free Consultation</a>
+        </div>
+        <div class="feature-day__visual">
+          <div class="ba-split" data-ba-slider aria-label="Before and after teeth-in-a-day transformation">
+            <div class="ba-split__after">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="Patient with a full, confident smile after teeth-in-a-day" loading="lazy" />
+              <span class="ba-label ba-label--after">After</span>
+            </div>
+            <div class="ba-split__before" style="width: 50%">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" alt="Patient before teeth-in-a-day treatment" loading="lazy" />
+              <span class="ba-label ba-label--before">Before</span>
+            </div>
+            <div class="ba-slider__handle" style="left: 50%" role="slider" tabindex="0" aria-label="Compare before and after teeth-in-a-day" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+              <span class="ba-slider__line"></span>
+              <span class="ba-slider__knob" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 5L3 12L8 19M16 5L21 12L16 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Smile Gallery -->
+    <section class="section smile-gallery" id="smile-gallery">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Smile Gallery</p>
+          <h2>Real Smiles. Real Results.</h2>
+          <p class="section__lead">Drag the slider to reveal the transformation — implants, whitening, and full makeovers from real DentPlant patients.</p>
+          <p class="section__disclaimer">Results may vary. Photos shared with patient consent.</p>
+        </div>
+
+        <div class="ba-grid">
+          <figure class="ba-card">
+            <div class="ba-slider" data-ba-slider>
+              <div class="ba-slider__after">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Patient smiling confidently after dental implants" loading="lazy" />
+                <span class="ba-label ba-label--after">After</span>
+              </div>
+              <div class="ba-slider__before" style="width: 50%">
+                <img src="https://images.unsplash.com/photo-1562330743-fbc6ef07ca78" alt="Patient before dental implant treatment" loading="lazy" />
+                <span class="ba-label ba-label--before">Before</span>
+              </div>
+              <div class="ba-slider__handle" style="left: 50%" role="slider" tabindex="0" aria-label="Compare before and after dental implants" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                <span class="ba-slider__line"></span>
+                <span class="ba-slider__knob" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 5L3 12L8 19M16 5L21 12L16 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+            </div>
+            <figcaption>Full arch implants — a complete smile restored in one day.</figcaption>
+          </figure>
+
+          <figure class="ba-card">
+            <div class="ba-slider" data-ba-slider>
+              <div class="ba-slider__after">
+                <img src="https://images.unsplash.com/photo-1677026010083-78ec7f1b84ed" alt="Patient with brighter teeth after professional whitening" loading="lazy" />
+                <span class="ba-label ba-label--after">After</span>
+              </div>
+              <div class="ba-slider__before" style="width: 50%">
+                <img src="https://images.unsplash.com/photo-1679741919483-acf704e00495" alt="Patient before teeth whitening" loading="lazy" />
+                <span class="ba-label ba-label--before">Before</span>
+              </div>
+              <div class="ba-slider__handle" style="left: 50%" role="slider" tabindex="0" aria-label="Compare before and after teeth whitening" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                <span class="ba-slider__line"></span>
+                <span class="ba-slider__knob" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 5L3 12L8 19M16 5L21 12L16 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+            </div>
+            <figcaption>Professional whitening — shades brighter in a single visit.</figcaption>
+          </figure>
+
+          <figure class="ba-card">
+            <div class="ba-slider" data-ba-slider>
+              <div class="ba-slider__after">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80" alt="Patient with a radiant smile after a full smile makeover" loading="lazy" />
+                <span class="ba-label ba-label--after">After</span>
+              </div>
+              <div class="ba-slider__before" style="width: 50%">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="Patient before a full smile makeover" loading="lazy" />
+                <span class="ba-label ba-label--before">Before</span>
+              </div>
+              <div class="ba-slider__handle" style="left: 50%" role="slider" tabindex="0" aria-label="Compare before and after full smile makeover" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                <span class="ba-slider__line"></span>
+                <span class="ba-slider__knob" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 5L3 12L8 19M16 5L21 12L16 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </div>
+            </div>
+            <figcaption>Complete smile makeover — veneers, alignment, and aesthetics combined.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why DentPlant / About -->
+    <section class="section why" id="about">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Why DentPlant</p>
+          <h2>A Clinic Built Around Your Smile</h2>
+          <p class="section__lead">Brazilian-founded, Somerville-rooted — we bring world-class dental care with warmth, precision, and zero judgment.</p>
+        </div>
+
+        <div class="why__grid">
+          <article class="why-card">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M20 8l10 6v12l-10 6-10-6V14l10-6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M20 20v12M10 14l10 6 10-6" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>In-House Specialists</h3>
+            <p>Implants, orthodontics, aesthetics, and surgery — all under one roof. No referrals, no runaround.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="10" width="24" height="20" rx="3" stroke="currentColor" stroke-width="2"/><path d="M14 18h12M14 22h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="28" cy="14" r="2" fill="currentColor"/></svg>
+            </div>
+            <h3>Cutting-Edge Technology</h3>
+            <p>3D imaging, digital smile design, and same-day fabrication for faster, more precise outcomes.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M20 34s-10-6-10-14a6 6 0 0112 0 6 6 0 0112 0c0 8-10 14-10 14z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Comfortable &amp; Judgment-Free</h3>
+            <p>Whether it's been months or years since your last visit — you'll be welcomed, heard, and never rushed.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="12" width="28" height="18" rx="3" stroke="currentColor" stroke-width="2"/><path d="M6 18h28" stroke="currentColor" stroke-width="2"/><path d="M12 26h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Flexible Payment &amp; Insurance</h3>
+            <p>We work with major insurance plans and offer flexible financing so cost never stands between you and your smile.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials" id="testimonials">
+      <div class="testimonials__stars" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__header section__header--light">
+          <p class="eyebrow eyebrow--light">Patient Stories</p>
+          <h2>Smiles That Speak for Themselves</h2>
+        </div>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel__track" data-carousel-track>
+            <article class="testimonial">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>
+                <p>"I walked in embarrassed about my missing teeth and walked out with a full smile the same day. The DentPlant team made me feel comfortable from the first minute — I actually cried happy tears in the car."</p>
+              </blockquote>
+              <footer>
+                <span class="testimonial__avatar" aria-hidden="true">MR</span>
+                <div>
+                  <cite>Michael R.</cite>
+                  <span class="testimonial__meta">Dental Implants · Somerville, MA</span>
+                </div>
+              </footer>
+            </article>
+            <article class="testimonial">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>
+                <p>"Fiz o clareamento e não acreditei na diferença. Em uma sessão meus dentes ficaram vários tons mais claros. A equipe fala português e me explicou tudo com muita paciência."</p>
+              </blockquote>
+              <footer>
+                <span class="testimonial__avatar" aria-hidden="true">AC</span>
+                <div>
+                  <cite>Ana C.</cite>
+                  <span class="testimonial__meta">Clareamento · Somerville, MA</span>
+                </div>
+              </footer>
+            </article>
+            <article class="testimonial">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>
+                <p>"As an adult I was nervous about braces, but the clear aligners were so discreet nobody at work noticed. Eighteen months later my smile is completely different — worth every check-in."</p>
+              </blockquote>
+              <footer>
+                <span class="testimonial__avatar" aria-hidden="true">SL</span>
+                <div>
+                  <cite>Sarah L.</cite>
+                  <span class="testimonial__meta">Orthodontics · Cambridge, MA</span>
+                </div>
+              </footer>
+            </article>
+          </div>
+          <div class="carousel__controls">
+            <button type="button" class="carousel__btn" data-carousel-prev aria-label="Previous review">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <div class="carousel__dots" data-carousel-dots></div>
+            <button type="button" class="carousel__btn" data-carousel-next aria-label="Next review">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner" id="cta">
+      <div class="cta-banner__watermark" aria-hidden="true">
+        <img src="assets/1.jpg" alt="" width="400" height="400" />
+      </div>
+      <div class="cta-banner__stars" aria-hidden="true"></div>
+      <div class="container cta-banner__inner">
+        <h2>Ready to Transform Your Smile?</h2>
+        <p>Book your free consultation today — no pressure, no obligation.</p>
+        <a href="#contact" class="btn btn--primary btn--lg">Book Now</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container contact__layout">
+        <div class="contact__info">
+          <p class="eyebrow">Get in Touch</p>
+          <h2>Book Your Free Consultation</h2>
+          <p class="section__lead">Tell us about your smile goals and we'll reach out to schedule your complimentary visit.</p>
+
+          <ul class="contact__details">
+            <li>
+              <span class="contact__icon" aria-hidden="true">📍</span>
+              <div>
+                <strong>Location</strong>
+                <span>Somerville, MA</span>
+              </div>
+            </li>
+            <li>
+              <span class="contact__icon" aria-hidden="true">📷</span>
+              <div>
+                <strong>Instagram</strong>
+                <a href="https://instagram.com/dentplant" target="_blank" rel="noopener noreferrer">@dentplant</a>
+              </div>
+            </li>
+            <li>
+              <span class="contact__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <strong>Office Hours</strong>
+                <span>Mon–Fri: 8:00 AM – 6:00 PM</span>
+                <span>Sat: 9:00 AM – 2:00 PM</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="contact__map" aria-label="Map placeholder">
+            <div class="map-placeholder">
+              <span>Map Embed Placeholder</span>
+              <small>Somerville, MA</small>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form" id="consultForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your full name" />
+          </div>
+          <div class="form-row form-row--half">
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@email.com" />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="(555) 000-0000" />
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Dental Implants</option>
+              <option>Teeth in One Day</option>
+              <option>Orthodontics &amp; Braces</option>
+              <option>Teeth Whitening</option>
+              <option>Smile Aesthetics</option>
+              <option>Root Canal Treatment</option>
+              <option>Prosthetics &amp; Crowns</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your smile goals or any questions…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Book Free Consultation</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="logo logo--footer">
+          <img src="assets/1.jpg" alt="DentPlant" class="logo__img" width="48" height="48" />
+          <span class="logo__text">DentPlant</span>
+        </a>
+        <p class="footer__tagline">Transformative dental care in the heart of Somerville.</p>
+        <p class="footer__tagline footer__tagline--pt">Cuidado odontológico transformador no coração de Somerville.</p>
+      </div>
+
+      <div class="footer__links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#smile-gallery">Smile Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__services">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#services">Dental Implants</a></li>
+          <li><a href="#services">Orthodontics &amp; Braces</a></li>
+          <li><a href="#services">Teeth Whitening</a></li>
+          <li><a href="#services">Smile Aesthetics</a></li>
+          <li><a href="#services">Root Canal Treatment</a></li>
+          <li><a href="#services">Prosthetics &amp; Crowns</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://instagram.com/dentplant" target="_blank" rel="noopener noreferrer" aria-label="Instagram @dentplant" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+        <p class="footer__instagram"><a href="https://instagram.com/dentplant" target="_blank" rel="noopener noreferrer">@dentplant</a></p>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year"></span> DentPlant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile floating CTA -->
+  <a href="#contact" class="floating-cta" aria-label="Book free consultation">
+    Book Free Consult
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
