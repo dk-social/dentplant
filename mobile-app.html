@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DentPlant — Patient App</title>
+  <meta name="description" content="DentPlant patient app — premium dental care in Somerville, MA. Book appointments, track your treatment journey, and message your care team." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mobile-app.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="phone" role="application" aria-label="DentPlant patient app preview">
+      <div class="status-bar" aria-hidden="true">
+        <span class="status-bar__time">9:41</span>
+        <div class="status-bar__icons">
+          <svg viewBox="0 0 18 12" width="18" height="12" aria-hidden="true"><rect x="0" y="8" width="3" height="4" rx="0.5" fill="currentColor"/><rect x="5" y="5" width="3" height="7" rx="0.5" fill="currentColor"/><rect x="10" y="2" width="3" height="10" rx="0.5" fill="currentColor"/><rect x="15" y="0" width="3" height="12" rx="0.5" fill="currentColor"/></svg>
+          <svg viewBox="0 0 16 12" width="16" height="12" aria-hidden="true"><path d="M8 2.5C10.2 2.5 12.2 3.4 13.7 5L15.2 3.5C13.3 1.6 10.8 0.5 8 0.5C5.2 0.5 2.7 1.6 0.8 3.5L2.3 5C3.8 3.4 5.8 2.5 8 2.5ZM8 6.5C9.4 6.5 10.6 7 11.5 7.9L13 6.4C11.7 5.1 9.9 4.3 8 4.3C6.1 4.3 4.3 5.1 3 6.4L4.5 7.9C5.4 7 6.6 6.5 8 6.5ZM8 10.5C8.8 10.5 9.5 10.2 10.1 9.7L8 7.6L5.9 9.7C6.5 10.2 7.2 10.5 8 10.5Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 25 12" width="25" height="12" aria-hidden="true"><rect x="0.5" y="0.5" width="21" height="11" rx="2.5" stroke="currentColor" fill="none"/><rect x="22" y="4" width="2.5" height="4" rx="1" fill="currentColor"/><rect x="2" y="2" width="17" height="8" rx="1.5" fill="currentColor"/></svg>
+        </div>
+      </div>
+
+      <div class="phone__scroll" id="phoneScroll">
+        <!-- Home -->
+        <section class="screen screen--home" id="screen-home" data-screen="home">
+          <header class="app-header">
+            <div class="brand">
+              <span class="brand__icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5" opacity="0.3"/><path d="M12 22c-1.5-4-1.5-8 0-12 1-2.5 2.5-4 4-4s3 1.5 4 4c1.5 4 1.5 8 0 12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/><circle cx="16" cy="10" r="2" fill="currentColor"/></svg>
+              </span>
+              <div class="brand__text">
+                <span class="brand__name">DentPlant</span>
+                <span class="brand__loc">Somerville, MA</span>
+              </div>
+            </div>
+            <button type="button" class="notif-btn" aria-label="Notifications">
+              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M12 3C8.5 3 6 5.5 6 9V14L4 17H20L18 14V9C18 5.5 15.5 3 12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 20C10 21.1 10.9 22 12 22C13.1 22 14 21.1 14 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span class="notif-btn__dot"></span>
+            </button>
+          </header>
+
+          <div class="greeting glass-card">
+            <div class="greeting__row">
+              <div>
+                <p class="greeting__hi">Good morning,</p>
+                <h1 class="greeting__name">Maria S.</h1>
+              </div>
+              <span class="avatar">MS</span>
+            </div>
+            <p class="greeting__sub">Your smile journey is on track ✨</p>
+          </div>
+
+          <article class="next-appt">
+            <div class="next-appt__glow" aria-hidden="true"></div>
+            <p class="next-appt__label">Upcoming Visit</p>
+            <p class="next-appt__title">Implant Follow-up</p>
+            <p class="next-appt__meta">Dr. Ana Silva · Thu Jul 24, 10:30 AM</p>
+            <p class="next-appt__loc">
+              <svg viewBox="0 0 24 24" fill="none" width="14" height="14" aria-hidden="true"><path d="M12 21C16.5 17.5 20 14 20 10C20 6.5 17 4 12 4C7 4 4 6.5 4 10C4 14 7.5 17.5 12 21Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+              DentPlant · Somerville
+            </p>
+            <div class="next-appt__actions">
+              <button type="button" class="btn btn--blue btn--sm">Reschedule</button>
+              <button type="button" class="btn btn--ghost-light btn--sm">Cancel</button>
+            </div>
+          </article>
+
+          <div class="quick-actions">
+            <a href="#screen-book" class="quick-action">
+              <span class="quick-action__icon quick-action__icon--blue" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 9H21M8 3V7M16 3V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span>
+              <span>Book</span>
+            </a>
+            <a href="#screen-journey" class="quick-action">
+              <span class="quick-action__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span>
+              <span>Treatments</span>
+            </a>
+            <a href="#screen-gallery" class="quick-action">
+              <span class="quick-action__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="11" r="2" stroke="currentColor" stroke-width="1.5"/><path d="M21 16L16 11L6 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span>Smile Gallery</span>
+            </a>
+            <a href="#screen-profile" class="quick-action">
+              <span class="quick-action__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 6H20V16H8L4 20V6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              </span>
+              <span>Contact</span>
+            </a>
+          </div>
+
+          <article class="featured glass-card">
+            <div class="featured__badge">Featured</div>
+            <div class="featured__body">
+              <span class="featured__icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none"><path d="M14 32c-2-6-2-12 0-18 1-4 4-6 6-6s5 2 6 6c2 6 2 12 0 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 8v4M16 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <h3 class="featured__title">Dental Implants</h3>
+                <p class="featured__desc">Permanent, natural-looking teeth — free consultation available.</p>
+                <a href="#screen-book" class="featured__link">Learn more →</a>
+              </div>
+            </div>
+          </article>
+
+          <a href="tel:+16175550100" class="emergency-btn">
+            <span class="emergency-btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M12 3V6M12 18V21M6 12H3M21 12H18M7 7L5 5M19 19L17 17M7 17L5 19M19 5L17 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/></svg>
+            </span>
+            <span class="emergency-btn__text">
+              <strong>Dental Emergency?</strong>
+              <small>Tap to call our urgent care line</small>
+            </span>
+            <svg viewBox="0 0 24 24" fill="none" width="18" height="18" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </section>
+
+        <div class="screen-divider" aria-hidden="true"></div>
+
+        <!-- Book -->
+        <section class="screen" id="screen-book" data-screen="book">
+          <header class="screen-header">
+            <a href="#screen-home" class="back-btn" aria-label="Go back">
+              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <h2 class="screen-header__title">Book Appointment</h2>
+            <span class="screen-header__spacer"></span>
+          </header>
+
+          <div class="booking-progress">
+            <div class="booking-progress__step booking-progress__step--done"><span>1</span></div>
+            <div class="booking-progress__line booking-progress__line--done"></div>
+            <div class="booking-progress__step booking-progress__step--active"><span>2</span></div>
+            <div class="booking-progress__line"></div>
+            <div class="booking-progress__step"><span>3</span></div>
+            <div class="booking-progress__line"></div>
+            <div class="booking-progress__step"><span>4</span></div>
+          </div>
+
+          <div class="step">
+            <p class="step__label">Select Treatment</p>
+            <div class="treatment-grid">
+              <button type="button" class="treatment-card treatment-card--active">
+                <span class="treatment-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M10 20c-1-4-1-8 0-12 0.5-2 2-3.5 4-3.5s3.5 1.5 4 3.5c1 4 1 8 0 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                <span>Dental Implants</span>
+              </button>
+              <button type="button" class="treatment-card">
+                <span class="treatment-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M6 14c0-4 3-7 6-7s6 3 6 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8 18h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                <span>Cosmetic</span>
+              </button>
+              <button type="button" class="treatment-card">
+                <span class="treatment-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><rect x="4" y="6" width="16" height="12" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                </span>
+                <span>Orthodontics</span>
+              </button>
+              <button type="button" class="treatment-card">
+                <span class="treatment-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M9 12h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                <span>Whitening</span>
+              </button>
+              <button type="button" class="treatment-card">
+                <span class="treatment-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                <span>Root Canal</span>
+              </button>
+              <button type="button" class="treatment-card">
+                <span class="treatment-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><rect x="6" y="8" width="12" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M9 8V6h6v2" stroke="currentColor" stroke-width="1.5"/></svg>
+                </span>
+                <span>Prosthetics</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="step">
+            <p class="step__label">Choose Dentist</p>
+            <div class="dentist-list">
+              <button type="button" class="dentist-card dentist-card--active">
+                <span class="avatar avatar--md">AS</span>
+                <div class="dentist-card__info">
+                  <strong>Dr. Ana Silva</strong>
+                  <small>Implant Specialist</small>
+                </div>
+                <span class="dentist-card__check" aria-hidden="true">✓</span>
+              </button>
+              <button type="button" class="dentist-card">
+                <span class="avatar avatar--md avatar--alt">RC</span>
+                <div class="dentist-card__info">
+                  <strong>Dr. Rafael Costa</strong>
+                  <small>Cosmetic Dentistry</small>
+                </div>
+                <span class="dentist-card__check" aria-hidden="true">✓</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="step">
+            <p class="step__label">Choose a Date</p>
+            <div class="calendar glass-card">
+              <div class="calendar__header">
+                <button type="button" class="calendar__nav" aria-label="Previous month">
+                  <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <span class="calendar__month">July 2026</span>
+                <button type="button" class="calendar__nav" aria-label="Next month">
+                  <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </div>
+              <div class="calendar__weekdays" aria-hidden="true">
+                <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+              </div>
+              <div class="calendar__grid">
+                <span class="cal-day cal-day--empty"></span>
+                <span class="cal-day cal-day--empty"></span>
+                <span class="cal-day cal-day--empty"></span>
+                <button type="button" class="cal-day">1</button>
+                <button type="button" class="cal-day cal-day--avail">2</button>
+                <button type="button" class="cal-day">3</button>
+                <button type="button" class="cal-day cal-day--avail">4</button>
+                <button type="button" class="cal-day">5</button>
+                <button type="button" class="cal-day cal-day--avail">6</button>
+                <button type="button" class="cal-day">7</button>
+                <button type="button" class="cal-day">8</button>
+                <button type="button" class="cal-day cal-day--avail">9</button>
+                <button type="button" class="cal-day">10</button>
+                <button type="button" class="cal-day cal-day--avail">11</button>
+                <button type="button" class="cal-day">12</button>
+                <button type="button" class="cal-day">13</button>
+                <button type="button" class="cal-day">14</button>
+                <button type="button" class="cal-day cal-day--today">15</button>
+                <button type="button" class="cal-day cal-day--avail">16</button>
+                <button type="button" class="cal-day">17</button>
+                <button type="button" class="cal-day cal-day--avail">18</button>
+                <button type="button" class="cal-day">19</button>
+                <button type="button" class="cal-day cal-day--avail">20</button>
+                <button type="button" class="cal-day">21</button>
+                <button type="button" class="cal-day cal-day--avail">22</button>
+                <button type="button" class="cal-day cal-day--avail">23</button>
+                <button type="button" class="cal-day cal-day--avail cal-day--selected">24</button>
+                <button type="button" class="cal-day cal-day--avail">25</button>
+                <button type="button" class="cal-day">26</button>
+                <button type="button" class="cal-day cal-day--avail">27</button>
+                <button type="button" class="cal-day">28</button>
+                <button type="button" class="cal-day cal-day--avail">29</button>
+                <button type="button" class="cal-day cal-day--avail">30</button>
+                <button type="button" class="cal-day">31</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <p class="step__label">Available Times</p>
+            <div class="time-slots">
+              <button type="button" class="time-slot">9:00 AM</button>
+              <button type="button" class="time-slot">10:30 AM</button>
+              <button type="button" class="time-slot time-slot--active">11:00 AM</button>
+              <button type="button" class="time-slot">1:30 PM</button>
+              <button type="button" class="time-slot">3:00 PM</button>
+              <button type="button" class="time-slot">4:30 PM</button>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn--primary btn--block confirm-btn">Confirm Booking</button>
+        </section>
+
+        <div class="screen-divider" aria-hidden="true"></div>
+
+        <!-- Appointments -->
+        <section class="screen" id="screen-appointments" data-screen="appointments">
+          <header class="screen-header">
+            <a href="#screen-home" class="back-btn" aria-label="Go back">
+              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <h2 class="screen-header__title">My Appointments</h2>
+            <span class="screen-header__spacer"></span>
+          </header>
+
+          <div class="tabs">
+            <button type="button" class="tab tab--active" data-tab="upcoming">Upcoming</button>
+            <button type="button" class="tab" data-tab="past">Past</button>
+          </div>
+
+          <div class="tab-panel" data-panel="upcoming">
+            <article class="appt-card">
+              <div class="appt-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M10 20c-1-4-1-8 0-12 0.5-2 2-3.5 4-3.5s3.5 1.5 4 3.5c1 4 1 8 0 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div class="appt-card__body">
+                <p class="appt-card__type">Implant Follow-up</p>
+                <h3 class="appt-card__provider">Dr. Ana Silva</h3>
+                <p class="appt-card__datetime">Thu Jul 24 · 10:30 AM</p>
+                <span class="appt-card__tag">Somerville, MA</span>
+                <div class="appt-card__actions">
+                  <button type="button" class="btn btn--outline btn--sm">Reschedule</button>
+                  <button type="button" class="btn btn--ghost btn--sm">Cancel</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="appt-card appt-card--alt">
+              <div class="appt-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <div class="appt-card__body">
+                <p class="appt-card__type">Teeth Whitening</p>
+                <h3 class="appt-card__provider">Dr. Rafael Costa</h3>
+                <p class="appt-card__datetime">Wed Aug 6 · 2:00 PM</p>
+                <span class="appt-card__tag">Somerville, MA</span>
+                <div class="appt-card__actions">
+                  <button type="button" class="btn btn--outline btn--sm">Reschedule</button>
+                  <button type="button" class="btn btn--ghost btn--sm">Cancel</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="tab-panel tab-panel--hidden" data-panel="past">
+            <article class="appt-card appt-card--past">
+              <div class="appt-card__icon appt-card__icon--muted" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><rect x="4" y="6" width="16" height="12" rx="3" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <div class="appt-card__body">
+                <p class="appt-card__type">Free Consultation</p>
+                <h3 class="appt-card__provider">Dr. Ana Silva</h3>
+                <p class="appt-card__datetime">Mon Jun 9 · 11:00 AM</p>
+                <span class="appt-card__tag">Somerville, MA</span>
+                <button type="button" class="btn btn--primary btn--sm">Book Again</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="screen-divider" aria-hidden="true"></div>
+
+        <!-- Treatment Journey -->
+        <section class="screen screen--journey" id="screen-journey" data-screen="journey">
+          <header class="screen-header">
+            <a href="#screen-home" class="back-btn" aria-label="Go back">
+              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <h2 class="screen-header__title">Treatment Journey</h2>
+            <span class="screen-header__spacer"></span>
+          </header>
+
+          <div class="journey-hero glass-card">
+            <p class="journey-hero__label">Active Treatment</p>
+            <h3 class="journey-hero__title">Dental Implant — Upper Left</h3>
+            <div class="journey-hero__progress">
+              <div class="journey-hero__bar"><div class="journey-hero__fill" style="width: 60%"></div></div>
+              <span>60% complete</span>
+            </div>
+          </div>
+
+          <div class="journey-timeline">
+            <div class="journey-step journey-step--done">
+              <span class="journey-step__dot">
+                <svg viewBox="0 0 24 24" fill="none" width="14" height="14"><path d="M5 12L10 17L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div class="journey-step__content">
+                <strong>Consultation</strong>
+                <span>Jun 9 — Treatment plan approved</span>
+              </div>
+            </div>
+            <div class="journey-step journey-step--done">
+              <span class="journey-step__dot">
+                <svg viewBox="0 0 24 24" fill="none" width="14" height="14"><path d="M5 12L10 17L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div class="journey-step__content">
+                <strong>Scan</strong>
+                <span>Jun 16 — 3D imaging completed</span>
+              </div>
+            </div>
+            <div class="journey-step journey-step--done">
+              <span class="journey-step__dot">
+                <svg viewBox="0 0 24 24" fill="none" width="14" height="14"><path d="M5 12L10 17L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div class="journey-step__content">
+                <strong>Procedure</strong>
+                <span>Jul 1 — Implant placed successfully</span>
+              </div>
+            </div>
+            <div class="journey-step journey-step--current">
+              <span class="journey-step__dot">4</span>
+              <div class="journey-step__content">
+                <strong>Healing</strong>
+                <span>In progress — follow-up Jul 24</span>
+              </div>
+            </div>
+            <div class="journey-step journey-step--upcoming">
+              <span class="journey-step__dot">5</span>
+              <div class="journey-step__content">
+                <strong>Complete</strong>
+                <span>Final crown placement — est. Aug 15</span>
+              </div>
+            </div>
+          </div>
+
+          <article class="care-tip glass-card">
+            <span class="care-tip__icon" aria-hidden="true">💡</span>
+            <p>Avoid hard foods on the implant site. Rinse with warm salt water twice daily during healing.</p>
+          </article>
+        </section>
+
+        <div class="screen-divider" aria-hidden="true"></div>
+
+        <!-- Smile Gallery -->
+        <section class="screen" id="screen-gallery" data-screen="gallery">
+          <header class="screen-header">
+            <a href="#screen-home" class="back-btn" aria-label="Go back">
+              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <h2 class="screen-header__title">Smile Gallery</h2>
+            <span class="screen-header__spacer"></span>
+          </header>
+
+          <div class="gallery-filters">
+            <button type="button" class="chip chip--active">All</button>
+            <button type="button" class="chip">Implants</button>
+            <button type="button" class="chip">Whitening</button>
+            <button type="button" class="chip">Orthodontics</button>
+            <button type="button" class="chip">Cosmetic</button>
+          </div>
+
+          <article class="gallery-case glass-card">
+            <div class="ba-compare">
+              <div class="ba-compare__side ba-compare__side--before">
+                <span class="ba-compare__label">Before</span>
+                <div class="ba-compare__illus ba-compare__illus--dull" aria-hidden="true">
+                  <svg viewBox="0 0 48 32" fill="none"><path d="M8 18c2-4 6-6 10-6s8 2 10 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.4"/><circle cx="14" cy="14" r="2" fill="currentColor" opacity="0.3"/><circle cx="24" cy="12" r="2" fill="currentColor" opacity="0.3"/><circle cx="34" cy="14" r="2" fill="currentColor" opacity="0.3"/></svg>
+                </div>
+              </div>
+              <div class="ba-compare__divider" aria-hidden="true"></div>
+              <div class="ba-compare__side ba-compare__side--after">
+                <span class="ba-compare__label">After</span>
+                <div class="ba-compare__illus ba-compare__illus--bright" aria-hidden="true">
+                  <svg viewBox="0 0 48 32" fill="none"><path d="M8 18c2-4 6-6 10-6s8 2 10 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="14" cy="14" r="2" fill="currentColor"/><circle cx="24" cy="12" r="2" fill="currentColor"/><circle cx="34" cy="14" r="2" fill="currentColor"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-case__body">
+              <span class="gallery-case__cat">Dental Implants</span>
+              <h3 class="gallery-case__title">Full Upper Arch Restoration</h3>
+              <p class="gallery-case__desc">Teeth in one day — restored confidence in 24 hours.</p>
+              <a href="#screen-book" class="btn btn--primary btn--sm btn--block">Book Similar Treatment</a>
+            </div>
+          </article>
+
+          <article class="gallery-case glass-card">
+            <div class="ba-compare">
+              <div class="ba-compare__side ba-compare__side--before">
+                <span class="ba-compare__label">Before</span>
+                <div class="ba-compare__illus ba-compare__illus--dull" aria-hidden="true">
+                  <svg viewBox="0 0 48 32" fill="none"><rect x="10" y="12" width="28" height="8" rx="4" stroke="currentColor" stroke-width="2" opacity="0.35"/></svg>
+                </div>
+              </div>
+              <div class="ba-compare__divider" aria-hidden="true"></div>
+              <div class="ba-compare__side ba-compare__side--after">
+                <span class="ba-compare__label">After</span>
+                <div class="ba-compare__illus ba-compare__illus--bright" aria-hidden="true">
+                  <svg viewBox="0 0 48 32" fill="none"><rect x="10" y="12" width="28" height="8" rx="4" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-case__body">
+              <span class="gallery-case__cat">Teeth Whitening</span>
+              <h3 class="gallery-case__title">Professional Whitening</h3>
+              <p class="gallery-case__desc">8 shades brighter in a single session.</p>
+              <a href="#screen-book" class="btn btn--primary btn--sm btn--block">Book Similar Treatment</a>
+            </div>
+          </article>
+
+          <article class="gallery-case glass-card">
+            <div class="ba-compare">
+              <div class="ba-compare__side ba-compare__side--before">
+                <span class="ba-compare__label">Before</span>
+                <div class="ba-compare__illus ba-compare__illus--dull" aria-hidden="true">
+                  <svg viewBox="0 0 48 32" fill="none"><path d="M12 20L18 10L24 18L30 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.35"/></svg>
+                </div>
+              </div>
+              <div class="ba-compare__divider" aria-hidden="true"></div>
+              <div class="ba-compare__side ba-compare__side--after">
+                <span class="ba-compare__label">After</span>
+                <div class="ba-compare__illus ba-compare__illus--bright" aria-hidden="true">
+                  <svg viewBox="0 0 48 32" fill="none"><path d="M14 18h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-case__body">
+              <span class="gallery-case__cat">Orthodontics</span>
+              <h3 class="gallery-case__title">Clear Aligner Treatment</h3>
+              <p class="gallery-case__desc">Straighter smile in 12 months — discreet &amp; comfortable.</p>
+              <a href="#screen-book" class="btn btn--primary btn--sm btn--block">Book Similar Treatment</a>
+            </div>
+          </article>
+        </section>
+
+        <div class="screen-divider" aria-hidden="true"></div>
+
+        <!-- Messages -->
+        <section class="screen screen--chat" id="screen-messages" data-screen="messages">
+          <header class="screen-header">
+            <a href="#screen-home" class="back-btn" aria-label="Go back">
+              <svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <h2 class="screen-header__title">Messages</h2>
+            <span class="screen-header__spacer"></span>
+          </header>
+
+          <div class="reminder-banner glass-card">
+            <span class="reminder-banner__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" width="18" height="18"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 9H21M12 13V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </span>
+            <div>
+              <strong>Appointment Reminder</strong>
+              <p>Implant follow-up · Jul 24 at 10:30 AM</p>
+            </div>
+          </div>
+
+          <div class="chat">
+            <div class="chat__date">Today</div>
+            <div class="bubble bubble--clinic">
+              <p>Olá Maria! Your implant follow-up is confirmed for Jul 24 at 10:30 AM. Please arrive 10 minutes early.</p>
+              <time>9:15 AM</time>
+            </div>
+            <div class="bubble bubble--clinic">
+              <p>Remember to avoid hard foods on the implant site until your next visit. Any questions, we're here! 😊</p>
+              <time>9:16 AM</time>
+            </div>
+            <div class="bubble bubble--patient">
+              <p>Thank you! I'll be there. Can I park nearby?</p>
+              <time>9:22 AM</time>
+            </div>
+          </div>
+
+          <div class="quick-replies">
+            <button type="button" class="quick-reply">Confirm ✓</button>
+            <button type="button" class="quick-reply">Reschedule</button>
+            <button type="button" class="quick-reply">Quick Question</button>
+          </div>
+
+          <div class="chat-input">
+            <input type="text" placeholder="Type a message…" aria-label="Message" id="chatInput" />
+            <button type="button" class="chat-input__send" aria-label="Send message">
+              <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M5 12L19 5L12 19L11 13L5 12Z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </section>
+
+        <div class="screen-divider" aria-hidden="true"></div>
+
+        <!-- Profile -->
+        <section class="screen screen--profile" id="screen-profile" data-screen="profile">
+          <header class="screen-header screen-header--profile">
+            <h2 class="screen-header__title">Profile</h2>
+          </header>
+
+          <div class="profile-hero glass-card">
+            <span class="avatar avatar--lg">MS</span>
+            <h3 class="profile-hero__name">Maria Santos</h3>
+            <p class="profile-hero__email">maria.s@email.com</p>
+            <span class="profile-hero__badge">Active Patient</span>
+          </div>
+
+          <nav class="profile-menu">
+            <a href="#screen-appointments" class="profile-menu__item">
+              <span class="profile-menu__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 9H21" stroke="currentColor" stroke-width="1.5"/></svg>
+              </span>
+              <div>
+                <strong>Treatment History</strong>
+                <small>3 completed treatments</small>
+              </div>
+              <svg viewBox="0 0 24 24" fill="none" width="18" height="18" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <button type="button" class="profile-menu__item">
+              <span class="profile-menu__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="6" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M4 10H20" stroke="currentColor" stroke-width="1.5"/></svg>
+              </span>
+              <div>
+                <strong>Insurance</strong>
+                <small>Delta Dental · PPO</small>
+              </div>
+              <svg viewBox="0 0 24 24" fill="none" width="18" height="18" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" class="profile-menu__item">
+              <span class="profile-menu__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 4H18V18H6V4Z" stroke="currentColor" stroke-width="1.5"/><path d="M6 8H18M10 12H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <strong>Invoices</strong>
+                <small>2 outstanding · View &amp; pay</small>
+              </div>
+              <svg viewBox="0 0 24 24" fill="none" width="18" height="18" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" class="profile-menu__item">
+              <span class="profile-menu__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 2V4M12 20V22M4 12H2M22 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <strong>Settings</strong>
+                <small>Notifications, language, privacy</small>
+              </div>
+              <svg viewBox="0 0 24 24" fill="none" width="18" height="18" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </nav>
+
+          <div class="profile-contact glass-card">
+            <h4>Contact DentPlant</h4>
+            <p>Somerville, MA · English &amp; Português</p>
+            <a href="https://instagram.com/dentplant" class="profile-contact__ig">@dentplant</a>
+            <div class="profile-contact__actions">
+              <a href="tel:+16175550100" class="btn btn--outline btn--sm">Call Clinic</a>
+              <a href="#screen-messages" class="btn btn--primary btn--sm">Message</a>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn--ghost btn--block logout-btn">Sign Out</button>
+        </section>
+      </div>
+
+      <nav class="bottom-nav" aria-label="App navigation">
+        <a href="#screen-home" class="bottom-nav__item bottom-nav__item--active" data-nav="home">
+          <svg viewBox="0 0 24 24" fill="none" width="20" height="20" aria-hidden="true"><path d="M4 10.5L12 4L20 10.5V19C20 19.5 19.5 20 19 20H5C4.5 20 4 19.5 4 19V10.5Z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><path d="M9 20V13H15V20" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></svg>
+          <span>Home</span>
+        </a>
+        <a href="#screen-book" class="bottom-nav__item" data-nav="book">
+          <svg viewBox="0 0 24 24" fill="none" width="20" height="20" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.75"/><path d="M3 9H21M8 3V7M16 3V7" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+          <span>Book</span>
+        </a>
+        <a href="#screen-journey" class="bottom-nav__item" data-nav="journey">
+          <svg viewBox="0 0 24 24" fill="none" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.75"/><path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+          <span>Journey</span>
+        </a>
+        <a href="#screen-messages" class="bottom-nav__item" data-nav="messages">
+          <svg viewBox="0 0 24 24" fill="none" width="20" height="20" aria-hidden="true"><path d="M4 6H20V16H8L4 20V6Z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></svg>
+          <span>Messages</span>
+        </a>
+        <a href="#screen-profile" class="bottom-nav__item" data-nav="profile">
+          <svg viewBox="0 0 24 24" fill="none" width="20" height="20" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.75"/><path d="M6 20C6 16.5 8.5 14 12 14C15.5 14 18 16.5 18 20" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+          <span>Profile</span>
+        </a>
+      </nav>
+
+      <div class="phone__home-indicator" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <script src="mobile-app.js"></script>
+</body>
+</html>
